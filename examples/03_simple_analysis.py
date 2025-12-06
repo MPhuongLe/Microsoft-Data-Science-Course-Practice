@@ -22,7 +22,7 @@ print()
 
 # Load a dataset - we'll use the honey production data
 print("📂 Loading honey production data...")
-data = pd.read_csv('../data/honey.csv')
+data = pd.read_csv('data/honey.csv')
 print("✅ Data loaded!\n")
 
 # Quick look at the data
@@ -145,7 +145,7 @@ if all(col in data.columns for col in ['state', 'year', 'totalprod']):
     
     if len(year_2012) > 0:
         # Find the row with maximum production in 2012
-        max_prod_idx = year_2012['totalprod'].idxmax()
+        max_prod_idx = year_2012['totalprod'].idxmin()
         max_prod_state = year_2012.loc[max_prod_idx, 'state']
         max_prod_amount = year_2012.loc[max_prod_idx, 'totalprod']
         
