@@ -1,20 +1,3 @@
-"""
-Honey Production Trends — Variant Exercise 
-
-Goal:
-Analyze production trends over time and identify insights across years and states.
-
-What you'll practice:
-- Yearly aggregation (sum by year)
-- Identifying extreme values (highest/lowest)
-- Filtering based on multi-year conditions
-- Grouping by state and computing multiple statistics
-- Sorting to explore top/bottom ranked values
-- Answering a real data question
-
-Dataset required: honey.csv
-"""
-
 import pandas as pd
 pd.options.display.float_format = "{:,.0f}".format
 
