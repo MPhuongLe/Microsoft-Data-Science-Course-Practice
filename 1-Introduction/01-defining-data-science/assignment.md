@@ -20,9 +20,9 @@ Fill in the following table (substitute suggested problem domains for your own o
 
 | Problem Domain | Problem | Which data to collect | How to store the data | Which insights/decisions we can make | 
 |----------------|---------|-----------------------|-----------------------|--------------------------------------|
-| Education | | | | |
-| Vaccination | | | | |
-| Productivity | | | | |
+| Maps & Exploration | How can I predict suitable places-to-try from my old Google Map reviews? | - My past reviews (ratings, text, categories) <br> - Metadata of places (pricing range, cuisine type, location, opening hours, etc.) <br> - Reviews & Ratings from other users <br> - Context data (time visited, companions, purpose) | CSV files for prototyping; Relational database if scaling | - Recommend new place I'm likely yo enjoy <br> - Identify patterns (I like cheap places vs. fancy, quiet vs. crowded) <br> - Discover factors influencing my ratings|
+| Hiring | What is needed for a DA/DS role (certificates, experience, technical & non-technical skills)? | - LinkedIn profiles of people in DA/DS roles <br> - Job descriptions from job boards <br> - Skills listed, years of experience, education <br> - Career transitions (previous roles) | CSV | - Identify most common required skills <br> - Compare skill gaps between me and market demand <br> - Decide which skills/certifications to prioritize learning |
+| Productivity |  | Chrome browsing history (URLs, timestamps, duration) | | -Identify peak productive hours <br> - Detect main sources of distraction |
 
 ## Rubric
 
