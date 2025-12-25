@@ -49,7 +49,7 @@ print()
 print("📂 Loading bird strike data...")
 
 try:
-    data = pd.read_csv('../data/birds.csv')
+    data = pd.read_csv('data/birds.csv')
     print(f"✅ Successfully loaded {len(data)} records")
     print()
 except FileNotFoundError:

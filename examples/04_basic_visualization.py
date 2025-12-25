@@ -17,6 +17,9 @@ Prerequisites:
 
 import pandas as pd
 import matplotlib.pyplot as plt
+import os
+
+os.makedirs("examples/plots", exist_ok=True)
 
 print("=" * 70)
 print("Basic Data Visualization Tutorial")
@@ -25,7 +28,7 @@ print()
 
 # Load data
 print("📂 Loading honey production data...")
-data = pd.read_csv('../data/honey.csv')
+data = pd.read_csv('data/honey.csv')
 print("✅ Data loaded!\n")
 
 # For better display, we'll use a subset of the data
@@ -69,7 +72,7 @@ if 'state' in data.columns and 'totalprod' in data.columns:
     plt.tight_layout()
     
     # Save the figure
-    plt.savefig('bar_chart_example.png', dpi=300, bbox_inches='tight')
+    plt.savefig('examples/plots/bar_chart_example.png', dpi=300, bbox_inches='tight')
     print("✅ Bar chart saved as 'bar_chart_example.png'")
     plt.close()  # Close to free memory
     print()
@@ -106,7 +109,7 @@ if 'year' in data.columns and 'totalprod' in data.columns:
     plt.grid(True, alpha=0.3, linestyle='--')
     
     plt.tight_layout()
-    plt.savefig('line_plot_example.png', dpi=300, bbox_inches='tight')
+    plt.savefig('examples/plots/line_plot_example.png', dpi=300, bbox_inches='tight')
     print("✅ Line plot saved as 'line_plot_example.png'")
     plt.close()
     print()
@@ -138,7 +141,7 @@ if 'state' in data.columns and 'totalprod' in data.columns:
     plt.title('Top 5 States Share of Total Honey Production', 
               fontsize=14, fontweight='bold', pad=20)
     
-    plt.savefig('pie_chart_example.png', dpi=300, bbox_inches='tight')
+    plt.savefig('examples/plots/pie_chart_example.png', dpi=300, bbox_inches='tight')
     print("✅ Pie chart saved as 'pie_chart_example.png'")
     plt.close()
     print()
@@ -177,7 +180,7 @@ if 'year' in data.columns and 'totalprod' in data.columns and 'state' in data.co
     plt.grid(True, alpha=0.3, linestyle='--')
     
     plt.tight_layout()
-    plt.savefig('comparison_plot_example.png', dpi=300, bbox_inches='tight')
+    plt.savefig('examples/plots/comparison_plot_example.png', dpi=300, bbox_inches='tight')
     print("✅ Comparison plot saved as 'comparison_plot_example.png'")
     plt.close()
     print()
@@ -194,7 +197,7 @@ print("  ✓ Plot multiple data series on one chart")
 print("  ✓ Customize colors, labels, and titles")
 print("  ✓ Save your visualizations as image files")
 print()
-print("Your visualizations have been saved in the examples/ folder!")
+print("Your visualizations have been saved in the examples/plots folder!")
 print()
 print("Try this yourself:")
 print("  • Change the colors of your charts")
